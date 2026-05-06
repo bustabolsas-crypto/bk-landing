@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #09090b; }
+::-webkit-scrollbar-thumb { background: #B8860B; border-radius: 3px; }
+
+/* Remove number input spinners */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; }
+input[type='number'] { -moz-appearance: textfield; }
